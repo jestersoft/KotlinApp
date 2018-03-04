@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun toastMe(view: View){
-        val myToast = Toast.makeText(this, "Hello Toast!", Toast.LENGTH_SHORT)
+        val toastMsg = getString(R.string.toast_message)
+        val myToast = Toast.makeText(this,toastMsg, Toast.LENGTH_SHORT)
         myToast.show()
     }
 
@@ -44,5 +45,11 @@ class MainActivity : AppCompatActivity() {
         randomIntent.putExtra(RandomActivity.TOTAL_COUNT, count)
 
         startActivity(randomIntent)
+    }
+
+    fun showList(view:View){
+        val listIntent = Intent(this, ListActivity::class.java)
+
+        startActivity(listIntent)
     }
 }

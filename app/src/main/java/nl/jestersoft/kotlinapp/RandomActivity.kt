@@ -1,5 +1,7 @@
 package nl.jestersoft.kotlinapp
 
+import android.app.Activity
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_random.*
@@ -29,5 +31,11 @@ class RandomActivity : AppCompatActivity() {
         textview_random.text = Integer.toString(randomInt)
 
         textview_label.text = getString(R.string.random_heading, count)
+    }
+
+    fun goBack(){
+         val intent: Intent = Intent(this, MainActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+         startActivity(intent)
     }
 }
