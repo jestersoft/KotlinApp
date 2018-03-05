@@ -4,12 +4,9 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 import android.widget.Toast
 
-
 import kotlinx.android.synthetic.main.activity_main.textCount
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -48,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showList(view:View){
-        val listIntent = Intent(this, ListActivity::class.java)
+        val listIntent = Intent(this, TemperatureActivity::class.java)
 
         startActivity(listIntent)
     }

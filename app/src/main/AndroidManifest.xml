@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RandomActivity" />
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".TemperatureActivity"></activity>
     </application>
 
 </manifest>

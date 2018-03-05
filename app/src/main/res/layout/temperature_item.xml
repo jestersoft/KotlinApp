@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <!-- Column 1 -->
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="18"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Column 2 -->
+    <TableLayout
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_weight="1">
+        <TableRow>
+            <TextView
+                android:id="@+id/sensorDescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Balkon"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="8sp"
+                android:text="30-07-2011 13:14"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+    </TableLayout>
+
+    <!-- Column 3 -->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <TableRow>
+            <TextView
+                android:id="@+id/maxLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textSize="8sp"
+                android:text="max"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:id="@+id/maxTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="14sp"
+                android:layout_margin="1dip"
+                android:textStyle="bold"
+                android:text="20"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/minLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textSize="8sp"
+                android:text="min"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textSize="14sp"
+                android:layout_width="fill_parent"
+                android:layout_margin="1dip"
+                android:textStyle="bold"
+                android:id="@+id/minTemp"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
